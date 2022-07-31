@@ -47,6 +47,11 @@ $$ F_i = \frac{\delta V}{\delta r_i} \qquad \qquad \qquad F_i = m_i * a_i  \qqua
 $$
 <iframe src="_Ala-molstar.html" width=100% height=60%></iframe>
 
+## New slide
+
+:::{#app2 .app .video-container}
+:::
+
 ## MD is based on quantum mechanics
 
 ![](www/Parameterization_compr.png){fig-align="center"}
