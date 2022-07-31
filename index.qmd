@@ -1,0 +1,121 @@
+---
+title: "Tensed Tendons"
+subtitle: "Looking at mechanoradicals <br> in atomic detail"
+date: today
+institute: Heidelberg Institute for Theoretical Studies
+author:
+  - name: Eric Hartmann
+    affiliations:
+      - id: hits
+        name: Heidelberg Institute for Theoretical Studies
+        url: https://www.h-its.org/
+      - id: uni-hd
+        name: Heidelberg University
+        url: https://www.uni-heidelberg.de/
+    orcid: 0000-0000-0000-0000
+    email: JD@example.org
+    url: https://example.org/
+
+keywords: [template, demo]
+bibliography: references.bib  
+citation:
+  type: article
+  citation-key: citationKeyNumber
+  status: draft
+format:
+  hits-revealjs:
+    title-slide-attributes:
+      data-background-image: ./www/Collagen_render.png
+      data-background-color: white
+      data-background-size: fill
+      data-background-position: center
+    css: presentation.css
+  hits-pdf:
+    keep-tex: true  
+---
+
+# {background-color='black' background-image="./www/Challenger_explosion.jpg" background-size=contain }
+
+# Are mechanoradicals relevant in biology? {background-color='black'}
+
+## Molecular dynamics (MD) simulations serve as a computational microscope
+
+![](www/Comp_microscope.jpeg){fig-align="center"}
+
+## Dynamics of molecules are simulated by solving Newton's equations of motion
+$$ F_i = \frac{\delta V}{\delta r_i} \qquad \qquad \qquad F_i = m_i * a_i  \qquad \qquad \qquad   \Delta v_i = \frac{\Delta t}{m_i} * F_i(t)
+$$
+<iframe src="_Ala-molstar.html" width=100% height=60%></iframe>
+
+## MD is based on quantum mechanics
+
+![](www/Parameterization_compr.png){fig-align="center"}
+
+::: footer
+NMR icon from bioicons by simonduerr
+:::
+
+## Bonds neither form nor break in classical MD simulations 
+
+![](www/qmmm.svg){fig-align="center"}
+
+::: footer
+from bioicons by simonduerr
+:::
+
+## MD/MC is a cheap reactive method
+
+![](www/KIMMDY_cycle.png){fig-align="center"}
+
+::: footer
+Rennekamp et al. Hybrid Kinetic Monte Carlo/Molecular Dynamics Simulations of Bond Scissions in Proteins. J. Chem. Theory Comput. (2020)
+:::
+
+# Finding radicals in collagen
+
+## Stressed collagen shows a DOPA radical signal in EPR
+
+![](www/DOPA_EPR.png){fig-align="center"}
+
+::: footer
+Zapp et al. Mechanoradicals in tensed tendon collagen as a source of oxidative stress. Nat Commun (2020).
+:::
+
+## DOPA precursors are found near crosslinks
+
+![](www/DOPA_Modelling.png){fig-align="center"}
+
+::: footer
+Zapp et al. Mechanoradicals in tensed tendon collagen as a source of oxidative stress. Nat Commun (2020).
+:::
+
+## Pulling simulations suggest breaks at crosslinks
+
+![](www/WhereBreak.png){fig-align="center"}
+
+::: footer
+from Benedikt Rennekamp and Christoph Karfusehr, MBM group
+:::
+
+## MS experiments confirm DOPA near crosslinks
+
+![](www/DOPA_MS.png){fig-align="center"}
+
+::: footer
+Zapp et al. Mechanoradicals in tensed tendon collagen as a source of oxidative stress. Nat Commun (2020).
+:::
+
+## The radical transfer to DOPA is a missing link
+
+![](www/Collagen_mechanism.png){fig-align="center"}
+
+## Reactive MD shows radical migration pathways
+
+<iframe src="_rnpep-molstar.html" width=100% height=500px></iframe>
+
+# Conclusions
+- Molecular dynamics simulations serve as a computational microscope
+- Mechanoradicals in tensed tendon collagen are a source of oxidative stress
+
+# {background-color="#003063" background-image="./www/Thank_you.png" background-size=contain}
+

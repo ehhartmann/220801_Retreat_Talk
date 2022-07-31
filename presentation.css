@@ -1,0 +1,16 @@
+.title {  
+    font-size: 1.8em;
+}
+
+#title-slide {
+    text-align: left;
+}
+
+#title-slide .subtitle {
+	margin-bottom: 2.5rem;
+	font-size: 1.5em;
+}
+
+.reveal h2 {
+    font-size: 1.5em;
+}
