@@ -6,7 +6,10 @@
 <script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="index_files/libs/quarto-contrib/molstar-v3.13.0/molstar.js"></script>
+<link href="index_files/libs/quarto-contrib/molstar-v3.13.0/molstar.css" rel="stylesheet">
+<link href="index_files/libs/quarto-contrib/molstar-v3.13.0/app-container.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-99.9.9">
 
   <meta name="author" content="Eric Hartmann">
@@ -349,8 +352,37 @@
 <h2>Dynamics of molecules are simulated by solving Newton’s equations of motion</h2>
 <p><span class="math display">\[ F_i = \frac{\delta V}{\delta r_i} \qquad \qquad \qquad F_i = m_i * a_i  \qquad \qquad \qquad   \Delta v_i = \frac{\Delta t}{m_i} * F_i(t)
 \]</span></p>
-<iframe src="_Ala-molstar.html" width="100%" height="60%">
-</iframe>
+<div id="app-./www/Ala_traj.pdb./www/Ala_traj.xtc" class="molstar-app">
+
+</div>
+         <script type="text/javascript">
+          molstar.Viewer.create('app-./www/Ala_traj.pdb./www/Ala_traj.xtc', {
+                layoutIsExpanded: false,
+                layoutShowControls: false,
+                layoutShowRemoteState: false,
+                layoutShowSequence: false,
+                layoutShowLog: false,
+                layoutShowLeftPanel: true,
+                viewportShowExpand: true,
+                viewportShowSelectionMode: false,
+                viewportShowAnimation: true,
+                pdbProvider: "rcsb",
+                emdbProvider: "rcsb",
+          }).then(viewer => {
+          viewer.loadTrajectory(
+          {
+            model: {
+              kind: 'model-url', url: './www/Ala_traj.pdb', format: 'pdb'
+            },
+            coordinates: {
+              kind: 'coordinates-url', url: './www/Ala_traj.xtc',
+              format: 'xtc', isBinary: true
+            }
+          }
+          );
+          });
+          </script>
+          
 </section>
 <section id="md-is-based-on-quantum-mechanics" class="slide level2">
 <h2>MD is based on quantum mechanics</h2>
@@ -412,8 +444,37 @@
 <img data-src="www/Collagen_mechanism.png" class="img-fluid r-stretch quarto-figure-center"></section>
 <section id="reactive-md-shows-radical-migration-pathways" class="slide level2">
 <h2>Reactive MD shows radical migration pathways</h2>
-<iframe src="_rnpep-molstar.html" width="100%" height="500px">
-</iframe>
+<div id="app-./www/rngpep.pdb./www/rngpep.xtc" class="molstar-app">
+
+</div>
+         <script type="text/javascript">
+          molstar.Viewer.create('app-./www/rngpep.pdb./www/rngpep.xtc', {
+                layoutIsExpanded: false,
+                layoutShowControls: false,
+                layoutShowRemoteState: false,
+                layoutShowSequence: false,
+                layoutShowLog: false,
+                layoutShowLeftPanel: true,
+                viewportShowExpand: true,
+                viewportShowSelectionMode: false,
+                viewportShowAnimation: true,
+                pdbProvider: "rcsb",
+                emdbProvider: "rcsb",
+          }).then(viewer => {
+          viewer.loadTrajectory(
+          {
+            model: {
+              kind: 'model-url', url: './www/rngpep.pdb', format: 'pdb'
+            },
+            coordinates: {
+              kind: 'coordinates-url', url: './www/rngpep.xtc',
+              format: 'xtc', isBinary: true
+            }
+          }
+          );
+          });
+          </script>
+          
 </section></section>
 <section id="conclusions" class="title-slide slide level1 center">
 <h1>Conclusions</h1>

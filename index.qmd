@@ -45,12 +45,8 @@ format:
 ## Dynamics of molecules are simulated by solving Newton's equations of motion
 $$ F_i = \frac{\delta V}{\delta r_i} \qquad \qquad \qquad F_i = m_i * a_i  \qquad \qquad \qquad   \Delta v_i = \frac{\Delta t}{m_i} * F_i(t)
 $$
-<iframe src="www/_Ala-molstar.html" width=100% height=60%></iframe>
 
-## New slide
-
-:::{#app2 .app .video-container}
-:::
+{{< mol-traj ./www/Ala_traj.pdb ./www/Ala_traj.xtc >}}
 
 ## MD is based on quantum mechanics
 
@@ -116,7 +112,7 @@ Zapp et al. Mechanoradicals in tensed tendon collagen as a source of oxidative s
 
 ## Reactive MD shows radical migration pathways
 
-<iframe src="www/_rnpep-molstar.html" width=100% height=500px></iframe>
+{{< mol-traj ./www/rngpep.pdb ./www/rngpep.xtc >}}
 
 # Conclusions
 - Molecular dynamics simulations serve as a computational microscope
